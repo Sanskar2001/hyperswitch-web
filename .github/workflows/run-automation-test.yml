@@ -49,7 +49,6 @@ jobs:
           npm run re:build && npm start &
           echo "Hyperswitch Web started" && cd Hyperswitch-React-Demo-App && npm start &
           echo "Demo App started"
-          echo ${{ secrets.HYPERSWITCH_SECRET_KEY }}
         # Builds the project and starts both the Hyperswitch Web and Demo App servers in the background
 
       - name: Run Cypress
